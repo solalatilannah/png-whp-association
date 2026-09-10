@@ -42,8 +42,5 @@ This website aims to:
 - Published website URL: [insert GitHub pages link here]
 - Validation evidence: [insert W3C Validator screenshot or notes here]
 
-
-
-
  
 - 
