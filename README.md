@@ -37,10 +37,10 @@ This website aims to:
 - Images with 'alt' text
 - Form with labels and validation attributes
 
-  ## Repository Information
-  - Progressive commits showing development stages
-  - Published website URL: [insert GitHub pages link here]
-  - Validation evidence: [insert W3C Validator screenshot or notes here]
+## Repository Information
+- Progressive commits showing development stages
+- Published website URL: [insert GitHub pages link here]
+- Validation evidence: [insert W3C Validator screenshot or notes here]
 
 
 
