@@ -43,4 +43,38 @@ This website aims to:
 - Validation evidence: [insert W3C Validator screenshot or notes here]. 
 
  
-- 
+# WHP Students Association Website (A3)
+
+## Purpose
+Responsive HTML5 + CSS3 website for WHP students at PNGUoT, showcasing activities and contact information.
+
+## Sitemap
+- Home (index.html)
+- Activities (activities.html)
+- Contact (contact.html)
+
+## Technologies
+- HTML5 (semantic structure)
+- CSS3 (Flexbox + Grid)
+- GitHub Pages (publication)
+- Git + GitHub (version control)
+
+## Accessibility & Refinement
+- Semantic HTML tags
+- Alt text for images
+- Responsive images (logos at bottom-right corner)
+- High contrast colors (green, black, white, red, maroon)
+- Responsive design tested on mobile, tablet, desktop
+
+## Validation & Testing
+- W3C Validator screenshot (attached)
+- Responsive screenshots (mobile, tablet, desktop)
+- Basic browser testing evidence
+
+## Repository & Live Site
+- GitHub Repo: [Insert link]
+- Published Site: [Insert GitHub Pages link]
+
+## AI Use Declaration
+This project was supported by Microsoft Copilot AI for structuring, paraphrasing, and formatting. Final coding, validation, and publication were completed by the student.
+
