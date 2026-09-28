@@ -73,7 +73,7 @@ Responsive HTML5 + CSS3 website for WHP students at PNGUoT, showcasing activitie
 
 ## Repository & Live Site
 - GitHub Repo: [Insert link]
-- Published Site: [Insert GitHub Pages link]
+- Published Site: [https://solalatilannah.github.io/png-whp-association/]
 
 ## AI Use Declaration
 This project was supported by Microsoft Copilot AI for structuring, paraphrasing, and formatting. Final coding, validation, and publication were completed by the student.
