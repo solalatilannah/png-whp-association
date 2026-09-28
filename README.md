@@ -72,7 +72,7 @@ Responsive HTML5 + CSS3 website for WHP students at PNGUoT, showcasing activitie
 - Basic browser testing evidence
 
 ## Repository & Live Site
-- GitHub Repo: [Insert link]
+- GitHub Repo: [https://github.com/solalatilannah/png-whp-association]
 - Published Site: [https://solalatilannah.github.io/png-whp-association/]
 
 ## AI Use Declaration
