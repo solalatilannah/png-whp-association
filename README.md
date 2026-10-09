@@ -78,3 +78,5 @@ Responsive HTML5 + CSS3 website for WHP students at PNGUoT, showcasing activitie
 ## AI Use Declaration
 This project was supported by Microsoft Copilot AI for structuring, paraphrasing, and formatting. Final coding, validation, and publication were completed by the student.
 
+AUTHOR- TILANNAH SOLALA 23201181 OSIT2
+
