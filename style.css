@@ -93,4 +93,89 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
 
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+.search-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-section input {
+    width: 300px;
+    max-width: 90%;
+    padding: 10px;
+}
+.activities-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+    padding: 20px;
+}
+.activity-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+activity-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+.learn-more-btn {
+    background: #2e7d32;
+    color: white;
+
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.learn-more-btn:hover {
+    background: #1b5e20;
+}
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+a:focus,
+button:focus,
+input:focus {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}

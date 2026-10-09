@@ -1,31 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WHP Students Association - Contact</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WHP Students Association - Contact</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.contact-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #004080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #002d5a;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        margin: 15px;
+    }
+
+}
+
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Contact Us</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Reach Out</h2>
-    <p>Email: whpstudents@pngeunitech.ac.pg</p>
-    <p>Phone: +675 123 4567</p>
-  </main>
+<header>
 
-  <footer>
-    <p>&copy; 2026 WHP Students Association, PNGUoT</p>
-  </footer>
+<h1>Contact Us</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="contact.html" aria-current="page">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<section class="contact-container">
+
+<div class="contact-info">
+
+<h2>Get In Touch</h2>
+
+<p>Email: whpstudents@pngunitech.ac.pg</p>
+
+<p>Phone: +675 123 4567</p>
+
+<p>Send us a message or register your interest in joining the association.</p>
+
+</div>
+
+<form id="contactForm">
+
+<div class="form-group">
+<label for="name">Full Name</label>
+<input
+type="text"
+id="name"
+name="name"
+required
+placeholder="Enter your full name">
+</div>
+
+<div class="form-group">
+<label for="email">Email Address</label>
+<input
+type="email"
+id="email"
+name="email"
+required
+placeholder="Enter your email address">
+</div>
+
+<div class="form-group">
+<label for="studentid">Student ID</label>
+<input
+type="text"
+id="studentid"
+name="studentid"
+required
+placeholder="Enter your student ID">
+</div>
+
+<div class="form-group">
+<label for="year">Year of Study</label>
+<select id="year" required>
+<option value="">Select Year</option>
+<option>Year 1</option>
+<option>Year 2</option>
+<option>Year 3</option>
+<option>Year 4</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="message">Message</label>
+<textarea
+id="message"
+rows="5"
+required
+placeholder="Type your message here"></textarea>
+</div>
+
+<button type="submit" class="submit-btn">
+Send Message
+</button>
+
+<p id="error" class="error-message"></p>
+<p id="success" class="success-message"></p>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 WHP Students Association, PNGUoT</p>
+</footer>
+
+<script>
+
+document.getElementById("contactForm")
+.addEventListener("submit", function(event){
+
+event.preventDefault();
+
+const name =
+document.getElementById("name").value.trim();
+
+const message =
+document.getElementById("message").value.trim();
+
+const error =
+document.getElementById("error");
+
+const success =
+document.getElementById("success");
+
+error.textContent = "";
+success.textContent = "";
+
+if(name.length < 3){
+
+error.textContent =
+"Name must contain at least 3 characters.";
+
+return;
+
+}
+
+if(message.length < 10){
+
+error.textContent =
+"Message must contain at least 10 characters.";
+
+return;
+
+}
+
+success.textContent =
+"Form validation successful. Your information is ready to be submitted.";
+
+});
+
+</script>
+
 </body>
 </html>
